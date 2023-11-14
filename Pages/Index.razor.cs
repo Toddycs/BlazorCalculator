@@ -34,10 +34,9 @@ namespace BlazorCalculator.Pages
             string op = _op.ToString();
             if(!string.IsNullOrEmpty(op))
             {
-                SimpleMath.Operator = op;
-                
                 if(Position == "FIRST")
                 {
+                    SimpleMath.Operator = op;
                     Position = "SECOND";
                 }
             }
