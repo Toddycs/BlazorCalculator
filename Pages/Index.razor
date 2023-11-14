@@ -1,0 +1,49 @@
+﻿@page "/"
+
+<MudLayout>
+    <MudField>
+        <MudItem xs="12">
+            <MudText Style="text-align: right; margin-right: 5px;" Typo="Typo.body2">@SimpleMath.Calc</MudText>
+            <MudText Style="text-align: right; margin: 5px;" Typo="Typo.h3">@SimpleMath.Result</MudText>
+        </MudItem>
+    </MudField>
+
+    <MudField>
+        @* Manipuladores de calculo *@
+        <MudItem xs="12">   
+            <div class="d-flex justify-content-center">
+                <MudIconButton OnClick="() => SetOperator('+')" Style="margin: 10px;" Variant="Variant.Filled" Color="Color.Dark" Size="Size.Large" Icon="@Icons.Material.Filled.Add"></MudIconButton>
+                <MudIconButton OnClick="() => SetOperator('-')" Style="margin: 10px;" Variant="Variant.Filled" Color="Color.Dark" Size="Size.Large" Icon="@Icons.Material.Filled.Remove"></MudIconButton>
+                <MudIconButton OnClick="() => SetOperator('*')" Style="margin: 10px;" Variant="Variant.Filled" Color="Color.Dark" Size="Size.Large" Icon="@Icons.Material.Filled.MultipleStop"></MudIconButton>
+                <MudIconButton OnClick="() => SetOperator('/')" Style="margin: 10px;" Variant="Variant.Filled" Color="Color.Dark" Size="Size.Large" Icon="@Icons.Material.Filled.SafetyDivider"></MudIconButton>
+            </div>
+        </MudItem>
+    </MudField>
+
+    <MudField>
+        @* Numerações *@
+        <MudItem xs="12">
+            <div class="d-flex justify-content-center">
+                <MudIconButton OnClick="() => Update('1')" Style="margin: 10px;" Variant="Variant.Filled" Color="Color.Dark" Size="Size.Large"> <MudText Typo="Typo.h4">1</MudText> </MudIconButton>
+                <MudIconButton OnClick="() => Update('2')" Style="margin: 10px;" Variant="Variant.Filled" Color="Color.Dark" Size="Size.Large"> <MudText Typo="Typo.h4">2</MudText> </MudIconButton>
+                <MudIconButton OnClick="() => Update('3')" Style="margin: 10px;" Variant="Variant.Filled" Color="Color.Dark" Size="Size.Large"> <MudText Typo="Typo.h4">3</MudText> </MudIconButton>
+                <MudIconButton OnClick="Clear" Style="margin: 10px;" Variant="Variant.Filled" Color="Color.Dark" Size="Size.Large"> <MudText Typo="Typo.h4">C</MudText> </MudIconButton>
+            </div>
+        </MudItem>
+        <MudItem xs="12">
+            <div class=" d-flex justify-content-center">
+                <MudIconButton OnClick="() => Update('4')" Style="margin: 10px;" Variant="Variant.Filled" Color="Color.Dark" Size="Size.Large"> <MudText Typo="Typo.h4">4</MudText> </MudIconButton>
+                <MudIconButton OnClick="() => Update('5')" Style="margin: 10px;" Variant="Variant.Filled" Color="Color.Dark" Size="Size.Large"> <MudText Typo="Typo.h4">5</MudText> </MudIconButton>
+                <MudIconButton OnClick="() => Update('6')" Style="margin: 10px;" Variant="Variant.Filled" Color="Color.Dark" Size="Size.Large"> <MudText Typo="Typo.h4">6</MudText> </MudIconButton>
+            </div>
+        </MudItem>
+        <MudItem xs="12">
+            <div class=" d-flex justify-content-center">
+                <MudIconButton OnClick="() => Update('7')" Style="margin: 10px;" Variant="Variant.Filled" Color="Color.Dark" Size="Size.Large"> <MudText Typo="Typo.h4">7</MudText> </MudIconButton>
+                <MudIconButton OnClick="() => Update('8')" Style="margin: 10px;" Variant="Variant.Filled" Color="Color.Dark" Size="Size.Large"> <MudText Typo="Typo.h4">8</MudText> </MudIconButton>
+                <MudIconButton OnClick="() => Update('9')" Style="margin: 10px;" Variant="Variant.Filled" Color="Color.Dark" Size="Size.Large"> <MudText Typo="Typo.h4">9</MudText> </MudIconButton>
+                <MudIconButton OnClick="Calculate" Style="margin: 10px;" Variant="Variant.Filled" Color="Color.Dark" Size="Size.Large" Icon="@Icons.Material.Filled.Calculate"></MudIconButton>
+            </div>
+        </MudItem>
+    </MudField>
+</MudLayout>

@@ -1,0 +1,1 @@
+C:\Users\nicolas\source\repos\BlazorCalculator\BlazorCalculator\BlazorCalculator.csproj;x64
